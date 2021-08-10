@@ -1,4 +1,3 @@
-<script>
 	document.getElementById("remote_desktop:\/Common\/RDP").addEventListener("touchstart", touchHandler, false);
 	document.getElementById("remote_desktop:\/Common\/RDP").addEventListener("touchmove", touchHandler, false);
 	document.getElementById("remote_desktop:\/Common\/RDP").addEventListener("touchend", touchHandler, false);
@@ -12,4 +11,3 @@
 		alert("You removed your finger from the screen!");
 	  }
 	}
-</script>
