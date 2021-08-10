@@ -1,4 +1,13 @@
-document.getElementById("remote_desktop:/Common/RDP")
-        .addEventListener('click', function (event) {
-             alert('Please standby for the RDP Session to start!');
-        });
+if( document.readyState !== 'loading' ) {
+    console.log( 'document is already ready, just execute code here' );
+    myInitCode();
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log( 'document was not ready, place code here' );
+    });
+}
+
+function myInitCode() {
+    var test = document.getElementById("remote_desktop:/Common/RDP")
+    console.log(test);
+    }
